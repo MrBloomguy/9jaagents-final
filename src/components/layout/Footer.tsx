@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Bot, Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Bot, Github, Twitter, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const footerSections = [
@@ -84,9 +84,15 @@ const Footer: React.FC = () => {
             <p className="text-xs text-slate-600 dark:text-slate-400">
               © 2024 9jaAgents. All rights reserved.
             </p>
-            <p className="text-xs text-slate-600 dark:text-slate-400 mt-2 sm:mt-0">
-              Made with ❤️ in Nigeria
-            </p>
+            <div className="mt-2 sm:mt-0">
+              <a href="https://bolt.new" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="https://img.shields.io/badge/Built%20with-Bolt.new-blue?style=for-the-badge&logo=thunder"
+                  alt="Built with Bolt"
+                  className="h-6"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
